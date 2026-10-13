@@ -1,4 +1,4 @@
-from task_management.task_utils import add_task, mark_task_as_complete, view_pending_tasks, calculate_progress
+from task_manager.task_utils import add_task, mark_task_as_complete, view_pending_tasks, calculate_progress
 # Define the main function
 def main():
     while True:
@@ -26,7 +26,7 @@ def main():
         elif choice == "5":
             print("Exiting the program...")
             break
-    else:
+        else:
          print("Invalid choice. Please try again.")
 
 if __name__ == "__main__":

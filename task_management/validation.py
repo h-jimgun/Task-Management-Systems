@@ -11,9 +11,7 @@ def validate_task_description(description):
     return True
 def validate_due_date(due_date):
     try:
-        due_date_obj = datetime.strptime(due_date, "%Y-%m-%d")
-        if due_date_obj.date() < datetime.today().date():
-            return False
+        datetime.strptime(due_date, "%Y-%m-%d")
         return True
     except ValueError:
         return False
